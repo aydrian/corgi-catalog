@@ -7,6 +7,5 @@ node_bundler = "esbuild"
 external_node_modules = [
   "sequelize/lib/query-interface",
   "sequelize/lib/promise",
-  "pg-hstore",
 ]
 included_files = ["netlify/certs/*"]
