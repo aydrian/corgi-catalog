@@ -11,7 +11,7 @@ export async function handler(event, context) {
 
   const { name, instagram } = JSON.parse(event.body);
 
-  //await Corgis.sync();
+  await Corgis.sync();
   await Corgis.bulkCreate([
     {
       name,
