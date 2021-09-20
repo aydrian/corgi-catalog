@@ -4,5 +4,5 @@ publish = "out"
 
 [functions]
 node_bundler = "esbuild"
-external_node_modules = ["sequelize", "any-promise", "sharp", "pg-native"]
+external_node_modules = ["sequelize", "any-promise", "sharp", "pg", "pg-native"]
 included_files = ["netlify/certs/*"]
