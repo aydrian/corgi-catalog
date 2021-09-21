@@ -6,3 +6,10 @@ publish = "out"
 node_bundler = "esbuild"
 external_node_modules = ["sequelize", "any-promise", "sharp", "pg", "pg-native"]
 included_files = ["netlify/certs/*"]
+
+[template.environment]
+DB_HOST = "Database Host"
+DB_PORT = "Database Port"
+DB_DATABASE = "Database name with Cluster"
+DB_USER = "Database SQL User"
+DB_PASSWORD = "Database SQL User Password"

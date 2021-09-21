@@ -5,11 +5,11 @@ import path from "path";
 // Connect to CockroachDB through Sequelize
 const sequelize = new Sequelize({
   dialect: "postgres",
-  username: "itsaydrian-stream",
+  username: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
-  host: "free-tier.gcp-us-central1.cockroachlabs.cloud",
-  port: 26257,
-  database: "minty-rabbit-2810.corgi_catalog",
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  database: process.env.DB_DATABASE,
   dialectOptions: {
     ssl: {
       //For secure connection:
